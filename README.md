@@ -32,7 +32,7 @@ Este sistema permite que **clientes jurídicos** visualizem produtos, adicionem 
 
 ```bash
 git clone https://github.com/CauaGoulart/Bella_Face.git
-cd Bella_Face
+cd Bella_Face ```
 
 ### 2. Configure o banco de dados
 Baixe o arquivo bancoDados.sql incluído no repositório
@@ -44,8 +44,13 @@ Abra o projeto na sua IDE
 
 Rode a classe BellaFaceApplication.java
 
-Login	Nome	Senha
-saojoao	Farmácia São João	senha123
-pacheco	Drogaria Pacheco	abc123
-panvel	Panvel Ltda	panvelpass
-drogasil	Drogasil S/A	drog@2025
+## Usuários de Acesso
+
+```
+Login     Nome                  Senha       
+--------  -------------------- ------------
+saojoao   Farmácia São João     senha123    
+pacheco   Drogaria Pacheco      abc123      
+panvel    Panvel Ltda           panvelpass  
+drogasil  Drogasil S/A          drog@2025   
+```
