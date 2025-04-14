@@ -1,6 +1,6 @@
 package com.sistema.bella_face.security;
 
-import com.sistema.bella_face.services.ClienteUserDetailsService;
+import com.sistema.bella_face.services.CustomerUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +17,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @RequiredArgsConstructor
 public class SecurityConfig {
 
-    private final ClienteUserDetailsService clienteUserDetailsService;
+    private final CustomerUserDetailsService customerUserDetailsService;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -48,7 +48,7 @@ public class SecurityConfig {
     @Bean
     public AuthenticationManager authManager(HttpSecurity http) throws Exception {
         AuthenticationManagerBuilder builder = http.getSharedObject(AuthenticationManagerBuilder.class);
-        builder.userDetailsService(clienteUserDetailsService).passwordEncoder(passwordEncoder());
+        builder.userDetailsService(customerUserDetailsService).passwordEncoder(passwordEncoder());
         return builder.build();
     }
 }
