@@ -11,9 +11,8 @@
         <h2 class="display-6">Seu Carrinho</h2>
     </div>
 
-    <!-- Mensagens de feedback -->
-    <div th:if="${erro}" class="alert alert-danger text-center" th:text="${erro}"></div>
-    <div th:if="${sucesso}" class="alert alert-success text-center" th:text="${sucesso}"></div>
+    <div th:if="${erro}" id="mensagem-erro" class="alert alert-danger text-center" th:text="${erro}"></div>
+    <div th:if="${sucesso}" id="mensagem-sucesso" class="alert alert-success text-center" th:text="${sucesso}"></div>
 
     <div th:if="${itens.empty}" class="alert alert-info text-center">
         Seu carrinho está vazio.
@@ -60,4 +59,18 @@
     </div>
 </div>
 </body>
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const sucesso = document.getElementById("mensagem-sucesso");
+        if (sucesso) {
+            setTimeout(() => sucesso.style.display = "none", 3000);
+        }
+
+        const erro = document.getElementById("mensagem-erro");
+        if (erro) {
+            setTimeout(() => erro.style.display = "none", 3000);
+        }
+    });
+</script>
+
 </html>
