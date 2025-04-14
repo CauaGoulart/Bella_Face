@@ -46,7 +46,6 @@ Rode a classe BellaFaceApplication.java
 
 ## Usuários de Acesso
 
-```
 Login     Nome                  Senha       
 --------  -------------------- ------------
 saojoao   Farmácia São João     senha123    
