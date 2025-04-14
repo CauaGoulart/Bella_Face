@@ -12,8 +12,6 @@ Este sistema permite que **clientes jurídicos** visualizem produtos, adicionem 
 - Comentários no pedido antes de finalizar
 - Restrição de pedidos aos dias úteis (segunda à sexta)
 - Visualização e exclusão de itens no carrinho
-- Feedback visual de ações (mensagens por 3 segundos)
-- Interface responsiva com Bootstrap 5
 
 ---
 
