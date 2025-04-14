@@ -32,7 +32,7 @@ Este sistema permite que **clientes jurídicos** visualizem produtos, adicionem 
 
 ```bash
 git clone https://github.com/CauaGoulart/Bella_Face.git
-cd Bella_Face ```
+cd Bella_Face
 
 ### 2. Configure o banco de dados
 Baixe o arquivo bancoDados.sql incluído no repositório
