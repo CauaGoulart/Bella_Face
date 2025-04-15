@@ -33,9 +33,11 @@ git clone https://github.com/CauaGoulart/Bella_Face.git
 cd Bella_Face
 
 ### 2. Configure o banco de dados
-Baixe o arquivo bancoDados.sql incluído no repositório
+Baixe o arquivo bellaface_db.sql incluído no repositório
 
 Crie um banco no PostgreSQL chamado bellaface_db
+
+Importe o bellaface_db no banco criado.
 
 ### 3. Execute o projeto
 Abra o projeto na sua IDE
