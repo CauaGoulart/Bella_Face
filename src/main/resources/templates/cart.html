@@ -49,10 +49,16 @@
         </table>
     </div>
 
-    <div class="mb-3">
-        <label for="comentario" class="form-label">Comentários do Pedido</label>
-        <textarea class="form-control" id="comentario" name="comentario" rows="3"></textarea>
-    </div>
+    <form method="post" th:action="@{/cart/comentario}">
+        <div class="mb-3">
+            <label for="comentario" class="form-label">Comentários do Pedido</label>
+            <textarea class="form-control" id="comentario" name="comentario" rows="3"
+                      th:text="${comentario}"></textarea>
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-primary">Salvar Comentário</button>
+        </div>
+    </form>
 
     <div class="text-end">
         <a href="/" class="btn btn-secondary">Voltar</a>
