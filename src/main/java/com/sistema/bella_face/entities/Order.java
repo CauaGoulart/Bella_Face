@@ -14,7 +14,9 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class Order {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @ManyToOne(optional = false)

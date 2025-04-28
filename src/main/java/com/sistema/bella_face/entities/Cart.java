@@ -8,6 +8,7 @@ import java.util.*;
 @Getter
 public class Cart {
     private final Map<Integer, CartItem> itens = new LinkedHashMap<>();
+    private String comentario;
 
     public boolean adicionarProduto(Product produto, int quantidade) {
         if (itens.containsKey(produto.getId())) {
@@ -35,4 +36,9 @@ public class Cart {
     public Collection<CartItem> getItens() {
         return itens.values();
     }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
+    }
+
 }
