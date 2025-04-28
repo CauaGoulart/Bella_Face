@@ -72,4 +72,15 @@ public class CartController {
 
         return "redirect:/cart";
     }
+
+    @PostMapping("/comentario")
+    public String salvarComentario(@RequestParam("comentario") String comentario, HttpSession session) {
+        Cart cart = (Cart) session.getAttribute("cart");
+        if (cart == null) {
+            cart = new Cart();
+        }
+        cart.setComentario(comentario);
+        session.setAttribute("cart", cart);
+        return "redirect:/cart";
+    }
 }
